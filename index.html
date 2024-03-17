@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- google font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800&family=RocknRoll+One&family=Zilla+Slab:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- self -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="./css/all.css">
+  <!-- 套件的css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css" rel="stylesheet" />
+  <style>
+    * {
+      font-family: 'Zilla Slab', serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- logo區域 ------------------------------------------------------------>
+  <div id="HeaderLogo"><a href="#"><img src="./images/logo.jpg"></a></div>
+
+  <!-- 白色導覽列--------------------------------------------------------------->
+  <nav id="MyNav" class="navbar navbar-expand-lg navbar-light bg-whrite container sticky-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navicon">
+        <a href="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Breads</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Artisan Breads</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Anadama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Zopf</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Baguette</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sourdough</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">More</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 紅色導覽列 ------------------------->
+  <div id="MyNav2" class="container-fluid">
+    <div class="row">
+      <div class="col"><a href="#">Free Shipping All Order Above On $99</a></div>
+      <div class="col"><a href="#">Return & Exchange In 3 Working Days</a></div>
+      <div class="col"><a href="#">Special Weekly Offer & Special Gift</a></div>
+    </div>
+  </div>
+  <a href=""></a>
+
+  <!-- 大輪播圖 ----------------------------->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./images/carousel1.jpg"></div>
+      <div class="swiper-slide"><img src="./images/carousel2.jpg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- section01 -------------------------->
+  <section id="section01">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Welcome To Breads !!</h5>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting</p>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <button><a href="#">READ MORE</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center">
+          <img src="./images/cms_banner_1.png">
+          <img src="./images/cms_banner_2.png">
+        </div>
+        <hr>
+      </div>
+    </div>
+  </section>
+  <!-- section02 --------------------------->
+  <section id="section02">
+    <div class="container">
+      <h1 class="text-center">Top Categories</h1>
+      <br>
+      <ul class="nav nav-pills mb-3 flex-column flex-md-row align-items-center justify-content-center" id="pills-tab"
+        role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">Featured Products</button>
+        </li>
+        <li class="d-flex align-items-center"><i class="fa-solid fa-star"></i></li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">New Products</button>
+        </li>
+        <li class="d-flex align-items-center"><i class="fa-solid fa-star"></i></li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Best Sellers</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-image="./images/25-home_default.jpg">
+                <img src="./images/24-home_default.jpg" data-original-src="./images/24-home_default.jpg">
+                <p>Curabitur Dolor Nunc</p>
+                <h4>$26.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/33-home_default.jpg"><img
+                  src="./images/25-home_default.jpg" data-original-src="./images/25-home_default.jpg">
+                <p>Cum Sociis Natoque</p>
+                <h4>$24.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/25-home_default.jpg"><img
+                  src="./images/33-home_default.jpg" data-original-src="./images/33-home_default.jpg">
+                <p>Suspendisse Massa Nulla</p>
+                <h4>$29.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/43-home_default.jpg"><img
+                  src="./images/40-home_default.jpg" data-original-src="./images/40-home_default.jpg">
+                <p>Justo Neque Commodo Nisl</p>
+                <h4>$39.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/40-home_default.jpg"><img
+                  src="./images/43-home_default.jpg" data-original-src="./images/43-home_default.jpg">
+                <p>Suspendisse Potenti</p>
+                <h4>$59.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/45-home_default.jpg"><img
+                  src="./images/44-home_default.jpg" data-original-src="./images/44-home_default.jpg">
+                <p>Tellus Eu Volutpat Varius</p>
+                <h4>$23.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/25-home_default.jpg"><img
+                  src="./images/45-home_default.jpg" data-original-src="./images/45-home_default.jpg">
+                <p>Varius Neque At Enim</p>
+                <h4>$22.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/43-home_default.jpg"><img
+                  src="./images/46-home_default.jpg" data-original-src="./images/46-home_default.jpg">
+                <p>Cum Sociis Natoque</p>
+                <h4>$23.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-image="./images/43-home_default.jpg"><img
+                  src="./images/49-home_default.jpg" data-original-src="./images/49-home_default.jpg">
+                <p>Multi-grain Bread</p>
+                <h4>$29.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/49-home_default.jpg"><img
+                  src="./images/26-home_default.jpg" data-original-src="./images/26-home_default.jpg">
+                <p>Walnut Bread</p>
+                <h4>$39.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/26-home_default.jpg"><img
+                  src="./images/47-home_default.jpg" data-original-src="./images/47-home_default.jpg">
+                <p>Hearty Italian</p>
+                <h4>$49.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/47-home_default.jpg"><img
+                  src="./images/46-home_default.jpg" data-original-src="./images/46-home_default.jpg">
+                <p>Honey Oat</p>
+                <h4>$69.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/46-home_default.jpg"><img
+                  src="./images/45-home_default.jpg" data-original-src="./images/45-home_default.jpg">
+                <p>Parmesan Oregano</p>
+                <h4>$22.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/45-home_default.jpg"><img
+                  src="./images/44-home_default.jpg" data-original-src="./images/44-home_default.jpg">
+                <p>Croissant </p>
+                <h4>$17.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/44-home_default.jpg"><img
+                  src="./images/43-home_default.jpg" data-original-src="./images/43-home_default.jpg">
+                <p>Pineapple Bun</p>
+                <h4>$21.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-image="./images/43-home_default.jpg"><img
+                  src="./images/25-home_default.jpg" data-original-src="./images/25-home_default.jpg">
+                <p>Milky Filling</p>
+                <h4>$26.99</h4>
+                <div class="info">
+                  <button>QUICK VIEW</button>
+                  <div>+ ADD TO CART</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <br>
+  <br>
+  <!-- section03 --------------------------->
+  <section id="section03">
+    <div class="info2">
+      <img src="./images/parallex_logo.png" class="m-2">
+      <h1 class="m-2">THE SPECIAL TASTE</h1>
+      <button class="m-2">VIEW COLLECTION</button>
+    </div>
+    <div class="jarallax">
+      <img class="jarallax-img" src="./images/baguette-bread.jpg">
+    </div>
+  </section>
+  <br>
+  <!-- section04 --------------------------->
+  <seciton id="section04">
+    <div class="container section04">
+      <h1 class="text-center">Shop By Categories</h1>
+      <br>
+      <!-- Swiper -->
+      <div class="swiper mySwiper3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-head">
+                <div class="retangle card-img-top">
+                  <div class="redcircle">
+                    <p>VIEW COLLECTION</p>
+                  </div>
+                  <img src="./images/3-tm_categorylist.jpg">
+                  <div class="retangle2">
+                    <p>BREADS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-head">
+                <div class="retangle card-img-top">
+                  <div class="redcircle">
+                    <p>VIEW COLLECTION</p>
+                  </div>
+                  <img src="./images/12-tm_categorylist.jpg" class="gsapred">
+                  <div class="retangle2">
+                    <p>BREADS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-head">
+                <div class="retangle card-img-top">
+                  <div class="redcircle">
+                    <p>VIEW COLLECTION</p>
+                  </div>
+                  <img src="./images/13-tm_categorylist.jpg" class="gsapred">
+                  <div class="retangle2">
+                    <p>BREADS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-head">
+                <div class="retangle card-img-top">
+                  <div class="redcircle">
+                    <p>VIEW COLLECTION</p>
+                  </div>
+                  <img src="./images/12-tm_categorylist.jpg" class="gsapred">
+                  <div class="retangle2">
+                    <p>BREADS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-head">
+                <div class="retangle card-img-top">
+                  <div class="redcircle">
+                    <p>VIEW COLLECTION</p>
+                  </div>
+                  <img src="./images/3-tm_categorylist.jpg" class="gsapred">
+                  <div class="retangle2">
+                    <p>BREADS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-head">
+                <div class="retangle card-img-top">
+                  <div class="redcircle">
+                    <p>VIEW COLLECTION</p>
+                  </div>
+                  <img src="./images/13-tm_categorylist.jpg" class="gsapred">
+                  <div class="retangle2">
+                    <p>BREADS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+      <br>
+    </div>
+  </seciton>
+  <!-- section05 -->
+  <section id="section05">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Latest Blog</h2>
+          <div class="swiper mySwiper4">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="./images/b-1.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example the bulk of.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="./images/b-2.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example the bulk of.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="./images/b-4.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example the bulk of.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <img src="./images/b-5.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example the bulk of.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2>Our Testimonial</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- gsap主程式 -->
+  <script src="./gsap/gsap.js"></script>
+  <!-- gsap plugin -->
+  <script src="./gsap/ScrollTrigger.js"></script>
+  <!-- jquery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js'
+    integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=='
+    crossorigin='anonymous'></script>
+  <!-- bootstrap -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js'></script>
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- jarallax -->
+  <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+  <!-- js統整的地方 -->
+  <script src="./js/all.js"></script>
+  <!--  -->
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+  </script>
+</body>
+
+</html>

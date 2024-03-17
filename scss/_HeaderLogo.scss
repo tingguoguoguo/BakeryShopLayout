@@ -1,0 +1,18 @@
+#HeaderLogo {
+  img {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  @include md {
+    img {
+      top: 0;
+    }
+  }
+
+
+
+}

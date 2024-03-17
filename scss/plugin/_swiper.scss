@@ -1,0 +1,143 @@
+// html,
+// body {
+//   position: relative;
+//   height: 100%;
+// }
+
+// body {
+//   background: #eee;
+//   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+//   font-size: 14px;
+//   color: #000;
+//   margin: 0;
+//   padding: 0;
+// }
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+
+  .swiper-pagination-bullet-active {
+    background: $p-color;
+  }
+
+  .swiper-pagination-bullet {
+    cursor: pointer;
+  }
+
+  .swiper-button-prev {
+    color: grey;
+
+    &:hover {
+      color: $p-color;
+
+    }
+  }
+
+  .swiper-button-next {
+    color: grey;
+
+    &:hover {
+      color: $p-color;
+
+    }
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper2 {
+  .swiper-slide {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+
+    img {
+      border-bottom: 1px solid rgb(218, 218, 218);
+    }
+
+    p {
+      margin-top: 12px;
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      color: #656565;
+    }
+
+    .info {
+      // position: absolute;
+      // top: 134px;
+      // left: -149px;
+
+      button {
+        color: $s-color;
+        font-size: 14px;
+        letter-spacing: 1.2px;
+        padding: 8px 20px;
+        border: none;
+        font-weight: 600;
+        background: $p-color;
+        display: none;
+
+        &:hover {
+          background: #000;
+          transition: 0.3s;
+        }
+
+      }
+
+      div {
+        // position: relative;
+        // top: 159px;
+        color: black;
+        font-size: 14px;
+        letter-spacing: 1.1px;
+        padding: 8px 20px;
+        border: none;
+        font-weight: 600;
+        background: $s-color;
+
+        &:hover {
+          color: $p-color;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+  @include md {
+    .swiper-slide {
+      .info {
+        position: absolute;
+        top: 134px;
+        left: -149px;
+
+        button {
+          display: block;
+        }
+
+        div {
+          position: relative;
+          top: 159px;
+
+        }
+      }
+    }
+  }
+}

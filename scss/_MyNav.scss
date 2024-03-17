@@ -1,0 +1,66 @@
+#MyNav {
+  margin-top: 120px;
+
+  .navbar-toggler {
+    //無效
+    // color: #2b2c2f !important;
+    // border: none !important;
+  }
+
+  // button:focus {
+  //   box-shadow: none;
+  // }
+
+  .nav-link {
+    color: black;
+
+    &:hover {
+      color: $p-color;
+    }
+  }
+
+
+
+  a {
+    font-size: 20px;
+    margin: 4px;
+    color: black;
+
+    &:hover {
+      color: $p-color;
+    }
+  }
+
+  @include lg {
+    .container-fluid {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+#MyNav2 {
+  background: $p-color;
+  text-align: center;
+  display: none;
+
+  .col {
+    border-right: 1px solid #d44646;
+  }
+
+  a {
+    color: $s-color;
+    text-decoration: none;
+  }
+
+  @include md {
+    display: block;
+    height: 90px;
+    line-height: 90px;
+  }
+
+  @include lg {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+  }
+}
